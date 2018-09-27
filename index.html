@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>Pagina Esqueleto Com Paralax</title>
+      <!--Import Google Icon Font-->
+      <!-- Primeira forma de configurar icones  -->
+      <link href="fontes/googleFonts.css" rel="stylesheet">
+      <!-- Segunda forma de conigurar icones    -->
+      <!-- <link href="css/googleFontes.css" rel="stylesheet"> -->
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom-materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <!-- Informa que trabalharemos com mobile -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="UTF-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- SidNav Menu -->
+        <ul id="slide-out" class="sidenav indigo lighten-5">
+            <li>
+              <div class="user-view">
+                <div class="background responsive-img">
+                  <img class="responsive-img" src="imagens/fundo-menu2.jpg">
+                </div>
+                <a href="#user"><img class="circle responsive-img" src="imagens/usuario.jpg"></a>
+                <a href="#name"><span class="white-text name">John Doe</span></a>
+                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+              </div>
+            </li>
+            <li>
+                <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">folder</i>Artigos</div>
+                    <div class="collapsible-body"><a class="modal-trigger" href="#modal2"><span>Primeiro Artigo</span></a></div>
+                    <div class="collapsible-body"><a class="modal-trigger" href="#art2"><span>Segundo Artigo</span></a></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">video_library</i>Videos</div>
+                        <div class="collapsible-body">
+                          <div class="video-container">
+                              <a href="https://www.youtube.com/embed/VkDnV1DvrVA">Marketing Digital</a>
+                           </div>
+                        </div>
+                        <div class="collapsible-body">
+                            
+                            <div class="video" >
+                                <div class="video-container">
+                                    <iframe width="30px" height="30px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            
+                          </div>
+                  </li>
+        
+                </ul>
+          </li>
+
+      
+            <li><div class="divider"></div></li>
+           
+            <li><a class="waves-effect" href="#!" onclick="fechar()">Sair</a></li>       
+            
+       
+        </ul>
+
+        <!-- FIM SidNav Menu -->
+
+        <!-- CABEÇALHO -->
+        <header class="navbar-fixed">
+                <nav class="blue darken-1">
+                        <div class="nav-wrapper">
+                          
+                           
+                          <ul class="">
+                       <!-- <li><a href="javascript:void(0)"><i class="material-icons">dehaze</i></a></li> -->
+                            <li data-target="slide-out" class="sidenav-trigger"><a href="#" ><i class="material-icons">menu</i></a></li>                            
+                            <li><a  href="javascript:void(0)">PAGINA ESQUELETO PARALAX</a></li>
+                             
+                          </ul>
+                          <ul class="right hide-on-med-and-down">
+                                <li>
+                                    <a class="modal-trigger" href="#modal1">
+                                        <i class="material-icons left">mail</i>
+                                        <span class="new badge amber">4</span>
+                                    </a>
+                                </li>
+                                <li>
+                                        <a class='dropdown-trigger' href='#' data-target='dropdown1'>
+                                            <img class="mini-perfil circle left responsive-img" src="imagens/usuario.jpg" alt="">
+                                            <span class="">Usuário</span>
+                                            <i class="material-icons right">arrow_drop_down</i>
+                                        </a>
+                                    </li>
+                              </ul>
+                        </div>
+                    </nav>
+                    
+                      <ul class="sidenav" id="mobile-demo">
+                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="badges.html">Components</a></li>
+                        <li><a href="collapsible.html">Javascript</a></li>
+                        <li><a href="mobile.html">Mobile</a></li>
+                      </ul>
+
+          <!-- CONTEÚDO MODAL  -->
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal bottom-sheet">
+            <div class="modal-content">
+              <ul class="collection">
+                <li class="collection-item avatar">
+                  <img src="images/yuna.jpg responsive-img" alt="" class="circle">
+                  <span class="title">Title</span>
+                  <p>First Line <br>
+                    Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="material-icons circle">folder</i>
+                  <span class="title">Title</span>
+                  <p>First Line <br>
+                    Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="material-icons circle green">insert_chart</i>
+                  <span class="title">Title</span>
+                  <p>First Line <br>
+                    Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+                <li class="collection-item avatar">
+                  <i class="material-icons circle red">play_arrow</i>
+                  <span class="title">Title</span>
+                  <p>First Line <br>
+                    Second Line
+                  </p>
+                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
+
+          <!-- Conteúdo do DropDow no Menu do login -->
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!"><i class="material-icons">person</i>Perfil</a></li>
+            <li><a href="#!"><i class="material-icons">settings</i>Configurar</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!"><i class="material-icons">directions_run</i>Sair</a></li>
+            <li><a href="#!"><i class="material-icons">exit_to_app</i>Sair</a></li>
+          </ul>
+       
+
+
+        </header>
+            
+        <!-- FIM DO CABEÇALHO -->
+        
+        <!-- Corpo -->
+        <main class="super-container">
+          <!-- Inicio do Parallaxe -->
+          <div class="parallax-container">
+            <div class="parallax"><img class="responsive-img" src="imagens/abdominal.jpg"></div>
+            <div class="container center white-text lighten-3"><h1>Texto dentro do Parallaxe</h1></div>
+          </div>
+          <div class="section white">
+            <div class="row container">
+              <h2 class="header ">Parallax</h2>
+              <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+              
+            </div>
+          </div>
+    
+                
+
+
+
+
+
+
+
+
+
+
+          <h5>Artigos</h5>
+            <!-- <div id='corpoArtigos' class="container"> -->
+                <div class="carousel lighten-3">
+                     <a class="modal-trigger" href="#modal2">
+                      <div class="carousel-item" >
+                       
+                            <div class="card  small">
+                              <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                                <img class="img responsive-img " src="imagens/cards/card1.jpg">
+                                
+                              </div> 
+                              <!-- <div class="card-action"> -->
+                                  <div class="cardconteudo">
+                                    <span>Card Title</span>
+                                    <p class="paragrafo_card">1 Prévia do Artigo. Como todos sabe assim que são os Artigos.</p>  
+                                    <div>Continue lendo ...</div>
+                                    </div>
+                              <!-- </div> -->
+                            </div>
+                       
+                      </div>
+                     </a>
+                     <a class="modal-trigger" href="#art2">
+                        <div class="carousel-item" >
+                            <div class="card  small">
+                              <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                                <img class="img responsive-img " src="imagens/cards/card2.jpg">
+                                
+                              </div> 
+                              <!-- <div class="card-action"> -->
+                                  <div class="cardconteudo">
+                                    <span>Novo Título Importante</span>
+                                    <p class="paragrafo_card">2 Prévia do Artigo. Como todos sabe assim que são os Artigos.</p>  
+                                    <div>Continue lendo ...</div>
+                                    </div>
+                              <!-- </div> -->
+                            </div>
+                        </div>
+                      </a>
+
+                      <div class="carousel-item " >
+                          <div class="card  small">
+                            <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                              <img class="img responsive-img " src="imagens/cards/card3.jpg">
+                              
+                            </div> 
+                            <!-- <div class="card-action"> -->
+                                <div class="cardconteudo">
+                                   <span>Terceiro Cartão </span>
+                                   <p class="paragrafo_card">3Terceiro Cartão. 
+                                     Tenho que contar quantas letras cabem. 
+                                   </p>  
+                                  <div>Continue lendo ...</div>
+                                  </div>
+                            <!-- </div> -->
+                          </div>
+                      </div>
+
+                      <div class="carousel-item" >
+                          <div class="card  small">
+                            <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                              <img class="img responsive-img " src="imagens/cards/card3.jpg">
+                              
+                            </div> 
+                            <!-- <div class="card-action"> -->
+                                <div class="cardconteudo">
+                                   <span>Quarto Cartão Titulo</span>
+                                   <p class="paragrafo_card">4  Cartão. 
+                                     Tenho que contar quantas letras cabem. 
+                                     No momento a quantidade 80 carcteres.
+                                   </p>  
+                                   <p class="paragrafo_card">Continue lendo ...</p>
+                                </div>
+                            <!-- </div> -->
+                          </div>
+                      </div>
+
+                      <div class="carousel-item" >
+                        <div class="card  small">
+                          <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                            <img class="img responsive-img " src="imagens/cards/card2.jpg">
+                            
+                          </div> 
+                          <!-- <div class="card-action"> -->
+                              <div class="cardconteudo">
+                                 <span>Novo Título Importante</span>
+                                 <p class="paragrafo_card">2 Prévia do Artigo. Como todos sabe assim que são os Artigos.</p>  
+                                <div>Continue lendo ...</div>
+                                </div>
+                          <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item" >
+                      <div class="card  small">
+                        <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                          <img class="img responsive-img " src="imagens/cards/card3.jpg">
+                          
+                        </div> 
+                        <!-- <div class="card-action"> -->
+                            <div class="cardconteudo">
+                               <span>Quarto Cartão Titulo</span>
+                               <p class="paragrafo_card">4  Cartão. 
+                                 Tenho que contar quantas letras cabem. 
+                                 No momento a quantidade 80 carcteres.
+                               </p>  
+                               <p class="paragrafo_card">Continue lendo ...</p>
+                            </div>
+                        <!-- </div> -->
+                      </div>
+                  </div>
+
+                  <div class="carousel-item" >
+                    <div class="card  small">
+                      <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                        <img class="img responsive-img " src="imagens/cards/card3.jpg">
+                        
+                      </div> 
+                      <!-- <div class="card-action"> -->
+                          <div class="cardconteudo">
+                             <span>Quarto Cartão Titulo</span>
+                             <p class="paragrafo_card">4  Cartão. 
+                               Tenho que contar quantas letras cabem. 
+                               No momento a quantidade 80 carcteres.
+                             </p>  
+                             <p class="paragrafo_card">Continue lendo ...</p>
+                          </div>
+                      <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="carousel-item" >
+                  <div class="card  small">
+                    <div class="img_card card-image waves-effect waves-ligth card-image-cover ">
+                      <img class="img responsive-img " src="imagens/cards/card3.jpg">
+                      
+                    </div> 
+                    <!-- <div class="card-action"> -->
+                        <div class="cardconteudo">
+                           <span>Quarto Cartão Titulo</span>
+                           <p class="paragrafo_card">4  Cartão. 
+                             Tenho que contar quantas letras cabem. 
+                             No momento a quantidade 80 carcteres.
+                           </p>  
+                           <p class="paragrafo_card">Continue lendo ...</p>
+                        </div>
+                    <!-- </div> -->
+                  </div>
+              </div>
+                    
+                    
+
+                </div>
+            </br>
+          
+                <!-- Linha com os Cards -->
+           
+                  
+            
+            </div>
+         
+          </section>
+            
+          <!-- Fim do Artigos -->
+          </br>
+          <!-- Depoimentos -->
+          <a href="javascript:void(0)" class="btn blue white-text">Mais Depoimentos</a>
+          <div class="row section grey lighten-1 quadro-depoimentos">
+           
+            <div class="container">
+                <h5>Depoimentos
+                <button class="btn">Novo Depoimento</button></h5>
+                <div class="campodepoimento ">
+
+                    <div class="col s12 l4">
+                        <div class="card-panel hoverable">
+                          <div class="row valign-wrapper no-sapce-row">
+                              <div class="col s2">
+                                <img src="imagens/usuario.jpg " alt='' class="responsive-img circle responsive-img">
+                              </div>
+                              <div class="col s10">
+                                      <span class="">
+                                    <i class="light">I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                      </i>
+                                  </span>
+                              </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      <div class="col s12 l4 ">
+                          <div class="card-panel hoverable colunadepoimento card-depoimento">
+                            <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                              <div class="row valign-wrapper no-sapce-row ">
+                                  <div class="col s3">
+                                      <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                  </div>
+                                  <div class="col s9">
+                                        Nome do Usuário.
+                                  </div>
+                              </div>  
+                              <div class="row valign-wrapper "><div class="col s1"></div>
+                              <div class="col s11 ">
+                                  <span class="">
+                                <i class="light">I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                  </i>
+                              </span>
+                          </div>
+                              </div>
+                            <!-- </div> -->
+                            
+                          </div>
+                        </div>
+                        <div class="col s12 l4 ">
+                          <div class="card-panel hoverable colunadepoimento card-depoimento">
+                            <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                              <div class="row valign-wrapper no-sapce-row ">
+                                  <div class="col s3">
+                                      <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                  </div>
+                                  <div class="col s9">
+                                        Nome do Usuário.
+                                  </div>
+                              </div>  
+                              <div class="row valign-wrapper "><div class="col s1"></div>
+                              <div class="col s11 ">
+                                  <span class="">
+                                <i class="light">I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                                  </i>
+                              </span>
+                          </div>
+                              </div>
+                            <!-- </div> -->
+                            
+                          </div>
+                        </div>
+                 
+
+                      <div class="col s12 l4 ">
+                          <div class="card-panel hoverable colunadepoimento card-depoimento">
+                            <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                              <div class="row valign-wrapper no-sapce-row ">
+                                  <div class="col s3">
+                                      <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                  </div>
+                                  <div class="col s9">
+                                        Nome do Usuário.
+                                  </div>
+                              </div>  
+                              <div class="row valign-wrapper "><div class="col s1"></div>
+                                <div class="col s11 container">       
+                                    <p><span><i>I am a very simple card. I am good at containing small bits of information.
+                                          I am convenient because I require little markup to use effectively. 
+                                        </i></span></p>
+                                  </div>
+                              </div>
+                            <!-- </div> -->
+                            
+                          </div>
+                        </div>
+
+                      <div class="col s12 l4 ">
+                        <div class="card-panel hoverable colunadepoimento card-depoimento">
+                          <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                            <div class="row valign-wrapper no-sapce-row ">
+                                <div class="col s3">
+                                    <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                </div>
+                                <div class="col s9">
+                                      Nome do Usuário.
+                                </div>
+                            </div>  
+                            <div class="row valign-wrapper "><div class="col s1"></div>
+                               <div class="col s11 container">       
+                                   <p><span><i>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively. 
+                                      </i></span></p>
+                                </div>
+                            </div>
+                          <!-- </div> -->
+                          
+                        </div>
+                      </div>
+                      <div class="col s12 l4 ">
+                        <div class="card-panel hoverable colunadepoimento card-depoimento">
+                          <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                            <div class="row valign-wrapper no-sapce-row ">
+                                <div class="col s3">
+                                    <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                </div>
+                                <div class="col s9">
+                                      Nome do Usuário.
+                                </div>
+                            </div>  
+                            <div class="row valign-wrapper "><div class="col s1"></div>
+                               <div class="col s11 container">       
+                                   <p><span><i>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively. 
+                                      </i></span></p>
+                                </div>
+                            </div>
+                          <!-- </div> -->
+                          
+                        </div>
+                      </div>
+                      <div class="col s12 l4 ">
+                        <div class="card-panel hoverable colunadepoimento card-depoimento">
+                          <!-- <div class="row valign-wrapper no-sapce-row"> -->
+                            <div class="row valign-wrapper no-sapce-row ">
+                                <div class="col s3">
+                                    <img src="imagens/fundo-fitness.jpg" alt='' class="responsive-img circle">
+                                </div>
+                                <div class="col s9">
+                                      Nome do Usuário.
+                                </div>
+                            </div>  
+                            <div class="row valign-wrapper "><div class="col s1"></div>
+                               <div class="col s11 container">       
+                                   <p><span><i>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively. 
+                                      </i></span></p>
+                                </div>
+                            </div>
+                          <!-- </div> -->
+                          
+                        </div>
+                      </div>
+
+
+                   </div>
+                  </br>
+                 </div>
+          </div>
+
+          <!-- Fim Depoimentos -->
+          
+          </br>
+          
+          <!-- AREA DE VIDEOS -->
+
+          <div id=" container-videos" class="container">
+            
+            <div id="corpo-videos" class="container">
+             <div class="passador1" > 
+                  <a class="btn-floating btn-large waves-effect waves-light red" style="top:110px" onclick="esquerda()"><i class="material-icons">arrow_back</i></a>
+              </div> 
+              
+                  <div id="video1" class="videoStyle blue col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                            0<!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+
+
+                  <div id="video1" class="videoStyle red col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          1 <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+
+                  <div id="video1" class="videoStyle blue  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          2 <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div><div id="video1" class="videoStyle  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                            <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+                        <p><span> Tendências de marketing Digital</span></p>
+                        <p>
+                          Como o Marketing digital pode influenciar nas vendas e Popularidade do seu negócio.
+                        </p>
+                    </div>
+
+                  </div>
+                  
+                  <div id="video1" class="videoStyle blue  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          4 <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+                  
+                  <div id="video1" class="videoStyle blue  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          5 <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+                  
+                  <div id="video1" class="videoStyle blue  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          6  <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+                  
+                  <div id="video1" class="videoStyle blue  col s12 l6">
+
+                    <div class="video" >
+                        <div class="video-container">
+                          7 <!-- <iframe width="70px" height="70px" src="https://www.youtube.com/embed/VkDnV1DvrVA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+
+                    <div class="detalhe-video">
+
+                    </div>
+
+                  </div>
+             
+              <div class="passador2"> 
+              <a class="btn-floating btn-large waves-effect waves-light"  style="top:110px" onclick="direita()"><i class="material-icons">arrow_forward</i></a>
+              </div>
+            </div>
+            
+          </div>
+
+        <br>
+
+
+          <!-- FIM DA ÁREA DE VÍDEOS -->
+
+          <!-- MODAIS DOS ARTIGOS -->
+          <!-- Modal Structure -->
+            <div id="modal2" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h4>Título do Artigo 1</h4>
+                  <p class="artParagravo">Texto Completo do Artigo</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">SAIR</a>
+                </div>
+              </div>
+
+              <div id="art2" class="modal modal-fixed-footer">
+                  <div class="modal-content">
+                    <h4>Título do Artigo 2</h4>
+                    <p class="artParagravo">The addEventListener() method attaches an event handler to the specified element.
+
+                        The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+                        
+                        You can add many event handlers to one element.
+                        
+                        You can add many event handlers of the same type to one element, i.e two "click" events.
+                        
+                        You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+                        
+                        The addEventListener() method makes it easier to control how the event reacts to bubbling.
+                        
+                        When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+                        
+                        You can easily remove an event listener by using the removeEventListener() method.
+                        
+                        The addEventListener() method attaches an event handler to the specified element.
+
+                        The addEventListener() method attaches an event handler to an element without overwriting existing event handlers.
+
+                        You can add many event handlers to one element.
+
+                        You can add many event handlers of the same type to one element, i.e two "click" events.
+
+                        You can add event listeners to any DOM object not only HTML elements. i.e the window object.
+
+                        The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+                        When using the addEventListener() method, the JavaScript is separated from the HTML markup, for better readability and allows you to add event listeners even when you do not control the HTML markup.
+
+                        You can easily remove an event listener by using the removeEventListener() method.
+
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">SAIR</a>
+                  </div>
+                </div>
+
+          <!--FIM MODAIS DOS ARTIGOS -->
+          
+    
+
+
+        </main>
+
+        <!-- Fim do Corpo -->
+        
+        <!-- Rodapé -->
+
+        <footer class="page-footer grey lighten-4 super-container">
+          <div class="container black-text">
+           
+              <div class="row ">
+            
+                <div class="col l6 s12">
+                  <h5>Inscreva-se para receber as novidades!</h5>
+                  
+                  <form action="">
+                    <div class="row no-sapce-row">
+
+                        <div class="input-field col l6 s12">
+                          <input type="text" name="nome">
+                          <label for="nome">Digite seu nome.</label>
+                        </div>
+                      </div>
+
+                    <div class="row no-sapce-row">
+
+                          <div class="input-field col l6 s12">
+                            <input type="text" name="email">
+                            <label for="email">Digite seu email.</label>
+                          </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col l6 s12 ">
+                          <button class=" btn blue darken-1 waves-effect">Enviar</button>
+                      </div>
+                    </div>
+
+                  </form>
+
+                </div>
+                <div class="col l6 s12">
+                    <h5>Siganos nas redes sociais!</h5>
+                    <div class="row">
+                    <div class="col s12">
+                      <ul id="redes-sociais">
+                          <li>
+                            <a href="javascript:void(0)">
+                              <img src="imagens/icones/youtube.jpg" alt="" class="responsive-img">
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">
+                              <img src="imagens/icones/facebook.jpg" alt="" class="responsive-img">
+                            </a>
+                          </li>
+                          <li>
+                              <a href="javascript:void(0)">
+                                <img src="imagens/icones/instagram.jpg" alt="" class="responsive-img">
+                              </a>
+                          </li>
+                          <li>
+                              <a href="javascript:void(0)">
+                                  <img src="imagens/icones/linkedin.jpg" alt="" class="responsive-img">
+                              </a>
+                          </li>
+                      </ul>
+                    </div>
+                </div>   
+              </div> 
+            </div>
+          </div>
+          <div class="footer-copyright blue darken-1">
+              <div class="container">
+                <h6 class="center">WDesenvolvedor. Todos Direitos Reservados.
+                  © 2018 Copyright Text
+                </h6>
+              </div>
+          </div>
+          
+         
+          
+        </footer>
+        
+        <!-- Fim Rodapé -->
+
+      <!-- Area iniciação Javascript -->
+      <!--JavaScript at end of body for optimized loading-->  
+     
+      <script type="text/javascript" src="js/jquery.js"></script>
+     
+      <script type="text/javascript" src="js/custom.js"></script> 
+      <script type="text/javascript" src="js/materialize.min.js"></script> 
+      <script>
+       var instancesslider; 
+            document.addEventListener('DOMContentLoaded', function() {
+            // NavBar
+            var menuNav = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(menuNav, ``);  
+           
+            // Paralax
+            var paralax = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(paralax, {responsiveThreshold:10});
+            //Modal do email
+            var btModalMail = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(btModalMail, {
+                  'onOpenStart': null
+              });
+              //DropDown do Usuario
+             var elems = document.querySelectorAll('.dropdown-trigger');
+             var instances = M.Dropdown.init(elems, {autoTrigger:true,coverTrigger:false,closeOnClick:true});
+
+            var carrosel = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(carrosel, {
+              indicators: true,
+              shift: 0,
+              fullWidth: true,
+              noWrap: true,
+              padding:60,
+              numVisible:8
+            });
+
+
+            var elems = document.querySelectorAll('.slider');
+             instancesslider = M.Slider.init(elems, {height:300,duration:0});
+
+            var listaMenus = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(listaMenus, {});
+
+                    
+            posicionar()
+
+            
+          });
+          function fechar(){
+            var menuNav = document.querySelectorAll('.sidenav'); 
+            var siderNavMenu = M.Sidenav.getInstance(menuNav);
+            siderNavMenu.close();
+          }
+
+          function nextSlider(){
+            
+            $('.slider').slider('next');
+           
+
+          }
+          
+          function pauseSlider(){
+              $('.slider').slider('pause');
+          }
+
+          function preventSlider(){
+                      
+            $('.slider').slider('prev');
+          }
+
+           
+           window.addEventListener('resize',function(){posicionar()})
+            
+ 
+      
+      </script>
+  
+
+    </body>
+  </html>

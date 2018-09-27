@@ -1,0 +1,33 @@
+ @media only screen and (min-width: 993px) {
+    .container {
+      width: 90%;
+    }
+  } 
+
+  .sidenav {
+      background-color: #c5cae9 ;
+
+  }
+
+  .sidenav li>a {color: fff}
+
+  #heder-logo{
+    font-size: 18px;
+  }
+
+  .mini-perfil{
+   width: 37px;
+   margin-top: 12px;
+   margin-right: 20px;
+  }
+  #redes-sociais li{
+    width: 40px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .quadro-depoimentos{
+    height: 350px;
+   overflow: hidden;
+    position: relative;
+  }

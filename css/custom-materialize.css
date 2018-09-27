@@ -1,0 +1,120 @@
+@media only screen and (min-width: 993px) {
+  .super-container{
+  margin-left: 3%;
+  margin-right: 3%;
+
+  }
+}
+.parallax-container{
+  height: 300px;
+}
+.card-img{
+  width:100%;
+}
+.card-image-cover{
+  width: 100%;
+}
+.no-sapce-row{
+  margin-bottom: 0 !important;
+}
+  
+.add-btn-flt{
+  /* Tratamento para o botão ficar bem posicionado no card */
+  position: relative;
+  float: right;
+  top: -18px;
+  right: 10%;
+}
+
+.card-depoimento{
+  height: 200px;
+  width: 350px;
+  
+  
+  
+}
+.colunadepoimento{
+  padding: 5px;
+}
+
+.depoimento{
+  height: 350px;
+  width: 200px;
+}
+.campodepoimento{
+ 
+  position: relative;
+  height: 250px;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+ 
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+.carousel{
+  height: 500px;
+  min-height:350px;
+  
+}
+.cardconteudo{
+ 
+  padding:10px;
+
+                                 
+}
+.img_card{
+  height: 150px;
+}
+.paragrafo_card{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.corpo_slider{
+  height: 300px;
+  width: 400px;
+}
+
+
+.carousel .indicators{
+  top:300px;
+  
+}
+.carousel .indicators .indicator-item{
+  background-color:#0091ea ;
+  
+}
+.carousel .indicators .indicator-item .active{
+  background-color: lightblue;
+  
+}
+
+.videoStyle{
+  width: 270px;
+  height: 300px;
+  margin: 5px;
+  margin-left: 5px;
+  position: relative;
+ 
+}
+
+#corpo-videos{
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0px;
+  
+}
+
+
+
+ .artParagravo{
+   text-align: justify;
+ }
+
+ .collapsible-body{
+   text-align: center;
+ }
+
